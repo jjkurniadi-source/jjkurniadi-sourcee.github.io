@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Oprec Organisasi - Tema Merah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                            800: '#9f1239',
+                            900: '#881337',
+                            950: '#4c0519',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #0d0205;
+            color: #fecdd3;
+        }
+        .red-gradient-text {
+            background: linear-gradient(135deg, #ff4d6d 0%, #ff758f 50%, #ffffff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .red-card-glow {
+            background: rgba(24, 5, 11, 0.7);
+            border: 1px solid rgba(225, 29, 72, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(159, 18, 57, 0.15);
+            backdrop-filter: blur(12px);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .red-card-glow:hover {
+            border-color: rgba(225, 29, 72, 0.6);
+            box-shadow: 0 12px 40px 0 rgba(225, 29, 72, 0.3);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #18050b;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #be123c;
+            border-radius: 4px;
+        }
+
+        .btn-smooth {
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-smooth:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px -4px rgba(225, 29, 72, 0.5);
+        }
+        .btn-smooth:active {
+            transform: translateY(1px) scale(0.97);
+            box-shadow: 0 2px 8px -2px rgba(225, 29, 72, 0.4);
+        }
+
+        #jokeText {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased custom-scrollbar leading-relaxed">
+
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#0d0205]/80 backdrop-blur-md border-b border-brand-900/40">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex items-center space-x-3">
+                    <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-700 to-brand-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-brand-700/50">
+                        <i class="fa-solid fa-fire"></i>
+                    </div>
+                    <span class="font-bold text-lg text-white tracking-wide">PORTFOLIO<span class="text-brand-500">.OPREC</span></span>
+                </div>
+                <div class="hidden md:flex space-x-6 text-sm font-semibold">
+                    <a href="#perkenalan" class="hover:text-brand-500 transition duration-200">Perkenalan</a>
+                    <a href="#ketertarikan" class="hover:text-brand-500 transition duration-200">Suka</a>
+                    <a href="#alasan" class="hover:text-brand-500 transition duration-200">Alasan milih kalian</a>
+                    <a href="#kelayakan" class="hover:text-brand-500 transition duration-200">Why me</a>
+                    <a href="#promosi" class="hover:text-brand-500 transition duration-200">Promosi Diri</a>
+                </div>
+                <div>
+                    <a href="#promosi" class="btn-smooth bg-gradient-to-r from-brand-700 to-brand-600 hover:from-brand-600 hover:to-brand-500 text-white px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold shadow-md shadow-brand-900/50 inline-block">
+                        Hubungi Saya
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="perkenalan" class="pt-28 pb-16 px-4 max-w-6xl mx-auto relative">
+        <div class="absolute top-10 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-700/20 rounded-full blur-[120px] -z-10"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-5 flex flex-col items-center text-center p-6 rounded-3xl red-card-glow">
+                <div class="relative mb-4 group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-brand-600 to-brand-800 rounded-full blur opacity-75 group-hover:opacity-100 transition duration-300"></div>
+                    <img src="https://placehold.co/300x300/4c0519/fecdd3?text=Foto+Profile" alt="Foto Profil" class="relative w-40 h-40 rounded-full object-cover border-2 border-brand-500/50">
+                    <span class="absolute bottom-2 right-2 bg-brand-600 text-white p-2 rounded-full text-xs shadow-lg" title="Siap Berkontribusi!">
+                        <i class="fa-solid fa-bolt"></i>
+                    </span>
+                </div>
+                <h2 class="text-2xl font-bold text-white tracking-wide">Jason Kurniadi</h2>
+                <p class="text-brand-500 text-sm font-medium mt-1">Calon TeRKereN</p>
+                
+                <div class="w-full border-t border-brand-900/50 my-4"></div>
+
+                <div class="w-full space-y-2 text-left text-xs sm:text-sm">
+                    <div class="flex items-center space-x-3 text-zinc-300">
+                        <i class="fa-solid fa-graduation-cap text-brand-500 w-5"></i>
+                        <span>Anak Aktu / 2026</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-zinc-300">
+                        <i class="fa-solid fa-id-card text-brand-500 w-5"></i>
+                        <span>NPM: 2606869926</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-zinc-300">
+                        <i class="fa-solid fa-envelope text-brand-500 w-5"></i>
+                        <span>jason.kurniadi@ui.ac.id</span>
+                    </div>
+                    <div class="flex items-center space-x-3 text-zinc-300">
+                        <i class="fa-brands fa-instagram text-brand-500 w-5"></i>
+                        <span>@jason.krniadi</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="md:col-span-7 flex flex-col justify-center space-y-4">
+                <div class="inline-flex items-center space-x-2 bg-brand-950/80 border border-brand-800 px-3 py-1 rounded-full text-xs font-semibold text-brand-200 w-fit">
+                    <span class="w-2 h-2 rounded-full bg-brand-500 animate-pulse"></span>
+                    <span>Perkenalan Diri Peserta</span>
+                </div>
+                <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                    Halo KAK AKU <span class="red-gradient-text">JASON</span>
+                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+                    PLS TERIMA SAYA/AKU/ME
+                </p>
+                
+                <div class="grid grid-cols-3 gap-3 pt-4">
+                    <div class="p-3 rounded-2xl bg-brand-950/60 border border-brand-900/60 text-center">
+                        <span class="block text-xl font-extrabold text-brand-500">100%</span>
+                        <span class="text-xs text-zinc-400">Komitmen</span>
+                    </div>
+                    <div class="p-3 rounded-2xl bg-brand-950/60 border border-brand-900/60 text-center">
+                        <span class="block text-xl font-extrabold text-brand-500">3+</span>
+                        <span class="text-xs text-zinc-400">Project Panitia</span>
+                    </div>
+                    <div class="p-3 rounded-2xl bg-brand-950/60 border border-brand-900/60 text-center">
+                        <span class="block text-xl font-extrabold text-brand-500">24/7</span>
+                        <span class="text-xs text-zinc-400">Sesuatu</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ketertarikan" class="py-16 px-4 max-w-6xl mx-auto border-t border-brand-950">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-xs font-bold tracking-widest text-brand-500 uppercase">NIH YG AKU SUKA</h2>
+            <p class="text-2xl sm:text-3xl font-extrabold text-white mt-2">Darimana Sumber Ketertarikan Saya?</p>
+            <p class="text-zinc-400 text-sm mt-2">Beberapa hal utama yang memantik api semangat saya untuk mendaftar.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Card 1: Kating -->
+            <div class="p-6 rounded-3xl red-card-glow relative overflow-hidden group">
+                <div class="w-12 h-12 rounded-2xl bg-brand-900/50 flex items-center justify-center text-brand-500 text-2xl mb-4 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-user-tie"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Cerita & Role Model Kakak Tingkat</h3>
+                <p class="text-zinc-300 text-sm leading-relaxed">
+                    Mendengar sharing pengalaman langsung dari Kak Budi (Ketua Biro) dan Kak Sarah tentang bagaimana kultur kerja yang suportif, kekeluargaan, serta akselerasi skill di biro ini membuat saya sangat terinspirasi.
+                </p>
+            </div>
+
+            <!-- Card 2: Media Sosial -->
+            <div class="p-6 rounded-3xl red-card-glow relative overflow-hidden group">
+                <div class="w-12 h-12 rounded-2xl bg-brand-900/50 flex items-center justify-center text-brand-500 text-2xl mb-4 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-hashtag"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Konten Media Sosial yang Impactful</h3>
+                <p class="text-zinc-300 text-sm leading-relaxed">
+                    Melihat branding Instagram dan TikTok organisasi yang sangat rapi, informatif, dan kreatif. Kualitas event yang di-publish selalu berhasil menarik perhatian ratusan partisipan.
+                </p>
+            </div>
+
+            <!-- Card 3: Rekam Jejak Program Kerja -->
+            <div class="p-6 rounded-3xl red-card-glow relative overflow-hidden group">
+                <div class="w-12 h-12 rounded-2xl bg-brand-900/50 flex items-center justify-center text-brand-500 text-2xl mb-4 group-hover:scale-110 transition duration-300">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-2">Keberhasilan Event Sebelumnya</h3>
+                <p class="text-zinc-300 text-sm leading-relaxed">
+                    Keberhasilan pelaksanaan grand event bulan lalu membuktikan bahwa Biro ini tidak hanya sekadar membuat program, tetapi mengeksekusinya dengan standar profesionalisme yang tinggi.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="alasan" class="py-16 px-4 max-w-6xl mx-auto border-t border-brand-950">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-6 space-y-4">
+                <span class="text-xs font-bold tracking-widest text-brand-500 uppercase">Pilihan Strategis</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight">
+                    Alasan Memilih Biro / Departemen <span class="text-brand-500">Media & Kominfo</span>
+                </h2>
+                <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+                    Saya memilih **Biro Media & Kominfo** karena biro ini merupakan "wajah" utama organisasi yang menjembatani komunikasi dengan mahasiswa luas. Saya memiliki passion besar di bidang visual storytelling, desain grafis, dan pengelolaan media digital.
+                </p>
+                <ul class="space-y-3 text-sm text-zinc-300 pt-2">
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-check text-brand-500 mt-1"></i>
+                        <span>**Keselarasan Minat:** Wadah tepat untuk mengaplikasikan hobi desain & editing video saya.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-check text-brand-500 mt-1"></i>
+                        <span>**Pengembangan Diri:** Ingin mengasah kemampuan *content strategy* dan *digital branding* secara nyata.</span>
+                    </li>
+                    <li class="flex items-start space-x-3">
+                        <i class="fa-solid fa-circle-check text-brand-500 mt-1"></i>
+                        <span>**Ruang Inovasi:** Memiliki ide-ide segar untuk meningkatkan *engagement* media sosial organisasi.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-6">
+                <div class="p-6 rounded-3xl red-card-glow border-l-4 border-l-brand-500 space-y-4">
+                    <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-quote-left text-brand-500"></i>
+                        Visi Komitmen Saya
+                    </h3>
+                    <p class="text-zinc-300 italic text-sm">
+                        "Saya tidak hanya ingin menjadi bagian dari biro ini, tetapi saya ingin membawa warna baru yang membuat setiap publikasi dan branding organisasi kita menjadi lebih ikonik, modern, dan disukai seluruh mahasiswa."
+                    </p>
+                    <div class="pt-4 border-t border-brand-900/50 flex justify-between items-center text-xs text-brand-300">
+                        <span>Pilihan 1: Biro Media & Kominfo</span>
+                        <span>Pilihan 2: Biro Hubungan Masyarakat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="kelayakan" class="py-16 px-4 max-w-6xl mx-auto border-t border-brand-950">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-xs font-bold tracking-widest text-brand-500 uppercase">Value Proposition</h2>
+            <p class="text-2xl sm:text-3xl font-extrabold text-white mt-2">Mengapa Saya Layak Dipertimbangkan?</p>
+            <p class="text-zinc-400 text-sm mt-2">Kombinasi antara kompetensi teknis, mentalitas, dan komitmen waktu.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Item 1 -->
+            <div class="p-6 rounded-2xl bg-brand-950/40 border border-brand-900/50 hover:border-brand-600 transition flex flex-col justify-between">
+                <div>
+                    <div class="text-brand-500 text-3xl font-black mb-2">01</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Problem Solver & Cepat Belajar</h4>
+                    <p class="text-zinc-400 text-xs">Mampu beradaptasi dengan deadline ketat dan selalu mencari solusi kreatif saat menghadapi kendala teknis.</p>
+                </div>
+                <span class="inline-block mt-4 text-[10px] font-semibold text-brand-400 uppercase tracking-wider">Adaptabilitas</span>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="p-6 rounded-2xl bg-brand-950/40 border border-brand-900/50 hover:border-brand-600 transition flex flex-col justify-between">
+                <div>
+                    <div class="text-brand-500 text-3xl font-black mb-2">02</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Manajemen Waktu Baik</h4>
+                    <p class="text-zinc-400 text-xs">Terbiasa menyeimbangkan akademik dan kegiatan organisasi tanpa mengorbankan tanggung jawab utama.</p>
+                </div>
+                <span class="inline-block mt-4 text-[10px] font-semibold text-brand-400 uppercase tracking-wider">Tanggung Jawab</span>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="p-6 rounded-2xl bg-brand-950/40 border border-brand-900/50 hover:border-brand-600 transition flex flex-col justify-between">
+                <div>
+                    <div class="text-brand-500 text-3xl font-black mb-2">03</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Skill Teknis Relevan</h4>
+                    <p class="text-zinc-400 text-xs">Menguasai Canva, Adobe Photoshop, Figma, dan tools video editing (CapCut/Premiere) secara aktif.</p>
+                </div>
+                <span class="inline-block mt-4 text-[10px] font-semibold text-brand-400 uppercase tracking-wider">Keahlian</span>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="p-6 rounded-2xl bg-brand-950/40 border border-brand-900/50 hover:border-brand-600 transition flex flex-col justify-between">
+                <div>
+                    <div class="text-brand-500 text-3xl font-black mb-2">04</div>
+                    <h4 class="text-lg font-bold text-white mb-2">Loyalitas & Kerja Sama Tim</h4>
+                    <p class="text-zinc-400 text-xs">Memiliki *growth mindset*, siap menerima kritikan membangun, dan mengedepankan kekompakan tim.</p>
+                </div>
+                <span class="inline-block mt-4 text-[10px] font-semibold text-brand-400 uppercase tracking-wider">Attitude</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="promosi" class="py-16 px-4 max-w-6xl mx-auto border-t border-brand-950">
+        <div class="text-center max-w-2xl mx-auto mb-12">
+            <h2 class="text-xs font-bold tracking-widest text-brand-500 uppercase">Showcase & Personal Branding</h2>
+            <p class="text-2xl sm:text-3xl font-extrabold text-white mt-2">Promosi Diri & Unjuk Kreativitas</p>
+            <p class="text-zinc-400 text-sm mt-2">Sisi bakat, kreativitas, hingga humor ringkas tentang saya.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+            <!-- Left: Bakat & Hard Skill -->
+            <div class="md:col-span-6 p-6 rounded-3xl red-card-glow space-y-6">
+                <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                    <i class="fa-solid fa-wand-magic-sparkles text-brand-500"></i>
+                    Kebisaaan saya
+                </h3>
+
+                <!-- Skill Bars -->
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-zinc-200">Bisa membuat orang ketawa</span>
+                            <span class="text-brand-400">90%</span>
+                        </div>
+                        <div class="w-full h-2 bg-brand-950 rounded-full overflow-hidden border border-brand-900">
+                            <div class="h-full bg-gradient-to-r from-brand-700 to-brand-500 w-[90%] rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-zinc-200">Jalan-jalan</span>
+                            <span class="text-brand-400">95%</span>
+                        </div>
+                        <div class="w-full h-2 bg-brand-950 rounded-full overflow-hidden border border-brand-900">
+                            <div class="h-full bg-gradient-to-r from-brand-700 to-brand-500 w-[85%] rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-zinc-200">Bikin PPT</span>
+                            <span class="text-brand-400">80%</span>
+                        </div>
+                        <div class="w-full h-2 bg-brand-950 rounded-full overflow-hidden border border-brand-900">
+                            <div class="h-full bg-gradient-to-r from-brand-700 to-brand-500 w-[80%] rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="p-4 rounded-xl bg-brand-950/60 border border-brand-900 text-xs text-zinc-300">
+                    <span class="font-bold text-white block mb-1">💡 Fun Fact Bakat Khusus:</span>
+                    Bisa nemuin ide konten segar jam 2 pagi sambil dengerin musik rock, dan sanggup bikin desain poster estetik hanya dalam waktu 30 menit kalau terdesak deadline!
+                </div>
+            </div>
+
+            <!-- Right: Humor & Interactive Side -->
+            <div class="md:col-span-6 p-6 rounded-3xl red-card-glow space-y-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="text-xl font-bold text-white flex items-center gap-2 mb-4">
+                        <i class="fa-solid fa-face-laugh-beam text-brand-500"></i>
+                        Sisi Humor & Ice Breaker
+                    </h3>
+                    <p class="text-zinc-300 text-sm leading-relaxed mb-4">
+                        Di balik keseriusan saya mengejar revisi poster, saya adalah tipe teman kelompok yang suka mencairkan suasana biar rapat tidak terlalu kaku.
+                    </p>
+
+                    <!-- Interactive Generator Joke Button -->
+                    <div class="p-4 rounded-2xl bg-brand-950 border border-brand-800 text-center space-y-3">
+                        <p class="text-xs text-brand-400 font-semibold uppercase tracking-wider">Cek Vibes Saya Hari Ini:</p>
+                        <p id="jokeText" class="text-sm font-medium text-white italic">"Klik tombol di bawah untuk melihat kutipan humor khas pendaftar oprec!"</p>
+                        <button onclick="generateJoke()" class="btn-smooth bg-brand-700 hover:bg-brand-600 text-white text-xs px-4 py-2 rounded-xl font-semibold shadow-md inline-flex items-center gap-2">
+                            <i id="diceIcon" class="fa-solid fa-dice transition-transform duration-500"></i>
+                            <span>Acak Kutipan Humor</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Call to Action -->
+                <div class="pt-4 border-t border-brand-900/50 flex items-center justify-between">
+                    <span class="text-xs text-zinc-400">Tertarik wawancara saya?</span>
+                    <a href="https://wa.me/" target="_blank" class="btn-smooth bg-gradient-to-r from-brand-600 to-brand-500 hover:from-brand-500 hover:to-brand-400 text-white font-bold text-xs px-4 py-2 rounded-xl shadow-lg shadow-brand-900/50 inline-block">
+                        <i class="fa-brands fa-whatsapp mr-1"></i> Undang Wawancara
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 border-t border-brand-950 text-center text-xs text-zinc-500">
+        <div class="max-w-6xl mx-auto px-4 space-y-2">
+            <p>© 2026 Portofolio Oprec Organisasi. Dibuat dengan <i class="fa-solid fa-heart text-brand-600"></i> & Vibes Merah Bold.</p>
+            <p class="text-[10px] text-zinc-600">Dikembangkan khusus untuk pemenuhan berkas penerimaan Biro/Departemen.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Array of humor lines
+        const jokes = [
+            "\"Laptop boleh kepanasan pas rendering video, tapi kepala tetap dingin pas dikritik revisi!\"",
+            "\"Prinsip saya: Lebih baik siap revisi 5x daripada telat ngumpulin tugas biro!\"",
+            "\"Bukan hanya anak desain biasa, tapi juga spesialis pembuat suasana rapat jadi ceria.\"",
+            "\"Kopi + Spotify + Dedikasi = Karya visual yang siap memanjakan mata pembina biro.\"",
+            "\"Saya siap jadi alasan kenapa engagement Instagram organisasi kita naik drastis bulan depan!\""
+        ];
+
+        function generateJoke() {
+            const jokeText = document.getElementById('jokeText');
+            const diceIcon = document.getElementById('diceIcon');
+            const randomIndex = Math.floor(Math.random() * jokes.length);
+            
+            // Rotate icon smoothly
+            if (diceIcon) {
+                diceIcon.style.transform = 'rotate(360deg)';
+                setTimeout(() => { diceIcon.style.transform = 'rotate(0deg)'; }, 500);
+            }
+
+            // Smooth fade and slight slide effect
+            jokeText.style.opacity = '0';
+            jokeText.style.transform = 'translateY(6px)';
+            
+            setTimeout(() => {
+                jokeText.innerText = jokes[randomIndex];
+                jokeText.style.opacity = '1';
+                jokeText.style.transform = 'translateY(0)';
+            }, 200);
+        }
+    </script>
+</body>
+</html>
